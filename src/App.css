@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    padding: 8px 40px;
+    background-color: #06AA48;
+    justify-content: space-between;
+    gap: 24px;
+    color: white;
+}
+
+header>select {
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #06AA48;
+    color: white;
+    outline-color: white;
+    padding-inline: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+img {
+    width: 8px;
+    height: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 40px;
+}
+
+main p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main .classification>table {
+    border-collapse: collapse;
+}
+
+main .classification>table th {
+    font-size: 12px;
+}
+
+main .classification>table th,
+main .classification>table td {
+    border: 1px solid red;
+    text-align: center;
+    height: 40px;
+}
+
+
+main .classification>table th:nth-child(1),
+main .classification>table td:nth-child(1) {
+    width: 280px;
+    text-align: left;
+    padding-inline: 4px;
+    & div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        & span:nth-child(3) {
+            flex: 1;
+            text-align: right;
+        }
+    }
+}
+main .classification>table th:nth-child(2),
+main .classification>table td:nth-child(2) { width: 40px; }
+main .classification>table th:nth-child(3),
+main .classification>table td:nth-child(3) { width: 40px; }
+main .classification>table th:nth-child(4),
+main .classification>table td:nth-child(4) { width: 40px; }
+main .classification>table th:nth-child(5),
+main .classification>table td:nth-child(5) { width: 40px; }
+main .classification>table th:nth-child(6),
+main .classification>table td:nth-child(6) { width: 40px; }
+main .classification>table th:nth-child(7),
+main .classification>table td:nth-child(7) { width: 40px; }
+main .classification>table th:nth-child(8),
+main .classification>table td:nth-child(8) { width: 40px; }
+main .classification>table th:nth-child(9),
+main .classification>table td:nth-child(9) { width: 40px; }
+main .classification>table th:nth-child(10),
+main .classification>table td:nth-child(10) { width: 40px; }
+main .classification>table th:nth-child(11),
+main .classification>table td:nth-child(11) { width: 100px; }
