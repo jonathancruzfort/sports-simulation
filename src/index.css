@@ -8,3 +8,34 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.dot, .square {
+  width: 7px;
+  height: 7px;
+}
+
+.dot {
+  border-radius: 50%;
+}
+
+.dot.red,
+.square.red { background-color: red; }
+.dot.green,
+.square.green { background-color: green; }
+.dot.gray,
+.square.gray { background-color: rgb(180, 180, 180); }
+.square.blue { background-color: blue; }
+.square.turquoise { background-color: turquoise; }
+
+.arrow {
+  background-size: 17px 50px;
+  background: url("https://s.glbimg.com/es/ge/static/live/widget_classificacao_responsivo/img/sprite-tabela-icones.svg?5dfb76dc3509") no-repeat left 1px;
+  display: inline-block;
+  height: 10px;
+  overflow: hidden;
+  width: 8px;
+}
+
+.arrow.up { background-position-y: 2px; }
+.arrow.down { 
+  background-position-x: -9px;
+}

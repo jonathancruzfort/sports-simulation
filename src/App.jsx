@@ -118,7 +118,11 @@ function App() {
             <tbody>
               {teams.map((team, idx) => (
                 <tr key={team.id}>
-                  <td><div><span>{idx + 1}</span><span>{team.description}</span><span>0 &#x25A0;</span></div></td>
+                  <td><div>
+                    <span>{idx + 1}</span>
+                    <span>{team.description}</span>
+                    <span>0 <div className="square gray"></div></span>
+                  </div></td>
                   {/* <td><span>{idx+1}</span><span>{team.description}</span><span>1 &uarr;</span></td> */}
                   {/* <td><span>{idx+1}</span><span>{team.description}</span><span>1 &darr;</span></td> */}
                   <td>79</td>
@@ -130,22 +134,28 @@ function App() {
                   <td>29</td>
                   <td>30</td>
                   <td>69</td>
-                  <td>&bull;&bull;&bull;&bull;&bull;</td>
+                  <td><div className="dots">
+                    <div className="dot gray"></div>
+                    <div className="dot red"></div>
+                    <div className="dot green"></div>
+                    <div className="dot green"></div>
+                    <div className="dot gray"></div>
+                  </div></td>
                 </tr>
               ))}
             </tbody>
           </table>
           <ul className="legends">
-            <li>libertadores</li>
-            <li>pré-libertadores</li>
-            <li>sul-americana</li>
-            <li>rebaixados</li>
-            <li>subiu</li>
-            <li>caiu</li>
-            <li>manteve</li>
-            <li>vitoria</li>
-            <li>empate</li>
-            <li>derrota</li>
+            <li><div className="square blue"></div>libertadores</li>
+            <li><div className="square turquoise"></div>pré-libertadores</li>
+            <li><div className="square green"></div>sul-americana</li>
+            <li><div className="square red"></div>rebaixados</li>
+            <li><div className="arrow up"></div>subiu</li>
+            <li><div className="arrow down"></div>caiu</li>
+            <li><div className="square gray"></div>manteve</li>
+            <li><div className="dot green"></div>vitoria</li>
+            <li><div className="dot gray"></div>empate</li>
+            <li><div className="dot red"></div>derrota</li>
           </ul>
         </section>
         <section className="rounds">
@@ -159,7 +169,7 @@ function App() {
             <div className="matche">
               <div className="matche_infor">
                 <div className="infor_local">Arena do Grêmio</div>
-                <div className="infor_time">08/12 - Domingo - 16:00</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
               </div>
               <div className="matche_teams">
                 <div className="team">
@@ -167,10 +177,182 @@ function App() {
                   <div className="shield"><img src="../src/assets/gremio.svg" alt="escudo do Gremio" /></div>
                   <div className="score">3</div>
                 </div>
+                <div className="separetor">x</div>
                 <div className="team">
                   <div className="score">2</div>
                   <div className="shield"><img src="../src/assets/corinthians.svg" alt="escudo do Corinthians" /></div>
-                  <div className="abbreviation">CRO</div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/flamengo.svg" alt="escudo do Flamengo" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/sao-paulo.svg" alt="escudo do Corinthians" /></div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/vitoria.svg" alt="escudo do Gremio" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/internacional.svg" alt="escudo do Corinthians" /></div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/juventude.svg" alt="escudo do Gremio" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/criciuma.svg" alt="escudo do Corinthians" /></div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/atletico-go.svg" alt="escudo do Gremio" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/atletico-mg.svg" alt="escudo do Corinthians" /></div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/athletico-pr.svg" alt="escudo do Gremio" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/bragantino.svg" alt="escudo do Corinthians" /></div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/cruzeiro.svg" alt="escudo do Gremio" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/vasco.svg" alt="escudo do Corinthians" /></div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/bahia.svg" alt="escudo do Gremio" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/botafogo.svg" alt="escudo do Corinthians" /></div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/cuiaba.svg" alt="escudo do Gremio" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/fluminense.svg" alt="escudo do Fluminence" /></div>
+                  <div className="abbreviation">COR</div>
+                </div>
+              </div>
+            </div>
+            <div className="matche">
+              <div className="matche_infor">
+                <div className="infor_local">Arena do Grêmio</div>
+                <div className="infor_time">08/12 • Domingo • 16:00</div>
+              </div>
+              <div className="matche_teams">
+                <div className="team">
+                  <div className="abbreviation">GRE</div>
+                  <div className="shield"><img src="../src/assets/fortaleza.svg" alt="escudo do Gremio" /></div>
+                  <div className="score">3</div>
+                </div>
+                <div className="separetor">x</div>
+                <div className="team">
+                  <div className="score">2</div>
+                  <div className="shield"><img src="../src/assets/palmeiras.svg" alt="escudo do Corinthians" /></div>
+                  <div className="abbreviation">COR</div>
                 </div>
               </div>
             </div>
