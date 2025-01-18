@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 40px;
+}
+
+main p {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-block: 10px;
+}

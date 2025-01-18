@@ -1,0 +1,29 @@
+.rounds {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 24px;
+}
+
+.round-selector {
+    border-bottom: 1px solid rgb(161, 161, 161);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.round-selector>p {
+    font-size: 16px;
+    border: none;
+}
+
+.round-selector>img {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.round-selector>img:nth-child(1) {
+    transform: rotate(180deg);
+}
+
